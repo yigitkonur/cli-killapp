@@ -1,0 +1,57 @@
+{
+  "name": "cli-killapp",
+  "version": "1.0.0",
+  "description": "Kill any app by name. Fuzzy search, interactive multi-select, zero zombies.",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "killapp": "dist/cli.js",
+    "ka": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node dist/cli.js",
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "kill",
+    "app",
+    "process",
+    "cli",
+    "fuzzy",
+    "search",
+    "interactive",
+    "sigkill",
+    "unix",
+    "macos",
+    "linux",
+    "npx"
+  ],
+  "author": "Yigit Konur",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigitkonur/cli-killapp.git"
+  },
+  "homepage": "https://github.com/yigitkonur/cli-killapp#readme",
+  "bugs": {
+    "url": "https://github.com/yigitkonur/cli-killapp/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "figlet": "^1.10.0",
+    "fuse.js": "^7.0.0",
+    "@inquirer/prompts": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^25.3.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
